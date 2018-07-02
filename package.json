@@ -1,0 +1,34 @@
+{
+  "name": "cozy-konnector-orangelivebox",
+  "version": "2.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozy/cozy-konnector-orangevod.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "cozy-konnector-libs": "3.7.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cozy-konnector-dev",
+    "prettier": "yarn prettier --write *.js",
+    "standalone": "cozy-konnector-standalone",
+    "standalone:record": "REPLAY=record cozy-konnector-standalone",
+    "standalone:replay": "REPLAY=replay cozy-konnector-standalone",
+    "build": "webpack",
+    "deploy": "git-directory-deploy --directory build/ --branch build --repo=https://github.com/cozy/cozy-konnector-orangevod.git",
+    "deploy:travis": "git-directory-deploy --username Cozy --email contact@cozycloud.cc --directory build/ --repo=https://$GITHUB_TOKEN@github.com/cozy/cozy-konnector-orangevod.git"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "4.5.1",
+    "eslint": "4.19.1",
+    "git-directory-deploy": "1.5.1",
+    "prettier": "1.12.1",
+    "webpack": "4.4.1",
+    "webpack-cli": "2.0.13"
+  }
+}
