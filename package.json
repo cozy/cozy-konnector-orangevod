@@ -24,10 +24,10 @@
     "deploy:travis": "git-directory-deploy --username Cozy --email contact@cozycloud.cc --directory build/ --repo=https://$GITHUB_TOKEN@github.com/cozy/cozy-konnector-orangevod.git"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "4.5.1",
+    "copy-webpack-plugin": "5.0.1",
     "eslint": "4.19.1",
     "git-directory-deploy": "1.5.1",
-    "prettier": "1.16.4",
+    "prettier": "1.12.1",
     "webpack": "4.29.6",
     "webpack-cli": "2.0.13"
   }
