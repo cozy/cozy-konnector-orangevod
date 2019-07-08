@@ -28,7 +28,7 @@
     "eslint": "4.19.1",
     "git-directory-deploy": "1.5.1",
     "prettier": "1.18.2",
-    "webpack": "4.35.2",
-    "webpack-cli": "3.3.5"
+    "webpack": "4.35.3",
+    "webpack-cli": "2.0.13"
   }
 }
